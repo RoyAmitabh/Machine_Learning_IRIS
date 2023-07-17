@@ -1,6 +1,6 @@
 from pyspark.ml.feature import  VectorAssembler
 from pyspark.ml.classification import RandomForestClassificationModel
-modelPath = "abfss://arc/iris_model"
+modelPath = "abfss://arc/archive/model_rnd_forest"
 inputPath = "abfss://arc/archive_data_iris_final.csv"
 # Load the saved model from ADLS
 model = RandomForestClassificationModel.load(modelPath)
